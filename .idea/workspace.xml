@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="902557fc-8494-46fa-9974-284aa7305619" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Backend/BackendApplication.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Backend/Config/app.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Backend/Config/routes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Backend/Modules/Connexion/ConnexionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Backend/Modules/Connexion/Views/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Backend/Modules/News/NewsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Backend/Modules/News/Views/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Backend/Modules/News/Views/insert.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Backend/Modules/News/Views/update.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Backend/Modules/News/Views/updateComment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Backend/Templates/layout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Frontend/Config/app.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Frontend/Config/routes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Frontend/FrontendApplication.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Frontend/Modules/News/NewsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Frontend/Modules/News/Views/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Frontend/Modules/News/Views/insertComment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Frontend/Modules/News/Views/show.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Frontend/Templates/layout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Errors/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/OCFram/Application.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/OCFram/ApplicationComponent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/OCFram/BackController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/OCFram/Config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/OCFram/Entity.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/OCFram/Field.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/OCFram/Form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/OCFram/FormBuilder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/OCFram/FormHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/OCFram/HTTPRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/OCFram/HTTPResponse.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/OCFram/Hydrator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/OCFram/Manager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/OCFram/Managers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/OCFram/MaxLengthValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/OCFram/NotNullValidator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/OCFram/PDOFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/OCFram/Page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/OCFram/Route.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/OCFram/Router.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/OCFram/SplClassLoader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/OCFram/StringField.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/OCFram/TextField.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/OCFram/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/OCFram/Validator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/vendors/Entity/Comment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/vendors/Entity/News.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/vendors/FormBuilder/CommentFormBuilder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/vendors/FormBuilder/NewsFormBuilder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/vendors/Model/CommentsManager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/vendors/Model/CommentsManagerPDO.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/vendors/Model/NewsManager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/vendors/Model/NewsManagerPDO.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/OCFram/PDOFactory.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/OCFram/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/OCFram/Application.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Backend/Config/routes.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Backend/Modules/Connexion/ConnexionController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="19" column="55" lean-forward="true" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Backend/Modules/Connexion/Views/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Backend/Config/app.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="36" lean-forward="true" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/OCFram/Config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/OCFram/Route.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="557">
+              <caret line="89" column="1" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/OCFram/Router.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="557">
+              <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/App/Backend/Modules/Connexion/ConnexionController.php" />
+        <option value="$PROJECT_DIR$/App/Backend/Modules/Connexion/Views/index.php" />
+        <option value="$PROJECT_DIR$/App/Backend/Modules/News/NewsController.php" />
+        <option value="$PROJECT_DIR$/App/Backend/Modules/News/Views/index.php" />
+        <option value="$PROJECT_DIR$/App/Backend/Modules/News/Views/insert.php" />
+        <option value="$PROJECT_DIR$/App/Backend/Modules/News/Views/update.php" />
+        <option value="$PROJECT_DIR$/App/Backend/Modules/News/Views/updateComment.php" />
+        <option value="$PROJECT_DIR$/App/Backend/Templates/layout.php" />
+        <option value="$PROJECT_DIR$/App/Frontend/FrontendApplication.php" />
+        <option value="$PROJECT_DIR$/App/Frontend/Config/app.xml" />
+        <option value="$PROJECT_DIR$/App/Frontend/Config/routes.xml" />
+        <option value="$PROJECT_DIR$/App/Frontend/Modules/News/NewsController.php" />
+        <option value="$PROJECT_DIR$/App/Frontend/Modules/News/Views/index.php" />
+        <option value="$PROJECT_DIR$/App/Frontend/Modules/News/Views/insertComment.php" />
+        <option value="$PROJECT_DIR$/App/Frontend/Modules/News/Views/show.php" />
+        <option value="$PROJECT_DIR$/App/Frontend/Templates/layout.php" />
+        <option value="$PROJECT_DIR$/Errors/404.html" />
+        <option value="$PROJECT_DIR$/lib/OCFram/ApplicationComponent.php" />
+        <option value="$PROJECT_DIR$/lib/OCFram/BackController.php" />
+        <option value="$PROJECT_DIR$/lib/OCFram/Config.php" />
+        <option value="$PROJECT_DIR$/lib/OCFram/Entity.php" />
+        <option value="$PROJECT_DIR$/lib/OCFram/Field.php" />
+        <option value="$PROJECT_DIR$/lib/OCFram/Form.php" />
+        <option value="$PROJECT_DIR$/lib/OCFram/FormBuilder.php" />
+        <option value="$PROJECT_DIR$/lib/OCFram/FormHandler.php" />
+        <option value="$PROJECT_DIR$/lib/OCFram/HTTPRequest.php" />
+        <option value="$PROJECT_DIR$/lib/OCFram/HTTPResponse.php" />
+        <option value="$PROJECT_DIR$/lib/OCFram/Hydrator.php" />
+        <option value="$PROJECT_DIR$/lib/OCFram/Manager.php" />
+        <option value="$PROJECT_DIR$/lib/OCFram/Managers.php" />
+        <option value="$PROJECT_DIR$/lib/OCFram/MaxLengthValidator.php" />
+        <option value="$PROJECT_DIR$/lib/OCFram/NotNullValidator.php" />
+        <option value="$PROJECT_DIR$/lib/OCFram/Page.php" />
+        <option value="$PROJECT_DIR$/lib/OCFram/Route.php" />
+        <option value="$PROJECT_DIR$/lib/OCFram/Router.php" />
+        <option value="$PROJECT_DIR$/lib/OCFram/StringField.php" />
+        <option value="$PROJECT_DIR$/lib/OCFram/TextField.php" />
+        <option value="$PROJECT_DIR$/lib/OCFram/User.php" />
+        <option value="$PROJECT_DIR$/lib/OCFram/Validator.php" />
+        <option value="$PROJECT_DIR$/lib/vendors/Entity/Comment.php" />
+        <option value="$PROJECT_DIR$/lib/vendors/Entity/News.php" />
+        <option value="$PROJECT_DIR$/lib/vendors/FormBuilder/CommentFormBuilder.php" />
+        <option value="$PROJECT_DIR$/lib/vendors/FormBuilder/NewsFormBuilder.php" />
+        <option value="$PROJECT_DIR$/lib/vendors/Model/CommentsManager.php" />
+        <option value="$PROJECT_DIR$/lib/vendors/Model/CommentsManagerPDO.php" />
+        <option value="$PROJECT_DIR$/lib/vendors/Model/NewsManager.php" />
+        <option value="$PROJECT_DIR$/lib/vendors/Model/NewsManagerPDO.php" />
+        <option value="$PROJECT_DIR$/Web/bootstrap.php" />
+        <option value="$PROJECT_DIR$/Web/.htaccess" />
+        <option value="$PROJECT_DIR$/lib/OCFram/PDOFactory.php" />
+        <option value="$PROJECT_DIR$/lib/OCFram/Application.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="640" />
+    <option name="height" value="726" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="BlogOC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlogOC" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BlogOC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlogOC" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BlogOC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlogOC" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="Backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BlogOC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlogOC" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="Backend" type="462c0819:PsiDirectoryNode" />
+              <item name="Config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BlogOC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlogOC" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="Backend" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BlogOC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlogOC" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="Backend" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Connexion" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BlogOC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlogOC" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="Backend" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Connexion" type="462c0819:PsiDirectoryNode" />
+              <item name="Views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BlogOC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlogOC" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="Backend" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="News" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BlogOC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlogOC" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BlogOC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlogOC" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BlogOC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlogOC" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="News" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BlogOC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlogOC" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BlogOC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlogOC" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="OCFram" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BlogOC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlogOC" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="vendors" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="902557fc-8494-46fa-9974-284aa7305619" name="Default Changelist" comment="" />
+      <created>1549293969786</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1549293969786</updated>
+      <workItem from="1549293971023" duration="3805000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3805000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1280" height="726" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/App/Backend/Modules/News/Views/insert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Backend/Modules/News/Views/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Backend/Modules/News/Views/updateComment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Backend/Templates/layout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="61" selection-start-column="61" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Frontend/FrontendApplication.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Frontend/Config/app.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Frontend/Config/routes.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Frontend/Modules/News/NewsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="87" column="1" lean-forward="true" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+          <folding>
+            <element signature="e#44#71#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Frontend/Modules/News/Views/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Frontend/Modules/News/Views/insertComment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Frontend/Modules/News/Views/show.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="77" selection-start-line="35" selection-start-column="77" selection-end-line="35" selection-end-column="77" />
+          <folding>
+            <element signature="n#style#0;n#p#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Frontend/Templates/layout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Errors/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="149" selection-start-line="1" selection-start-column="149" selection-end-line="1" selection-end-column="149" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/OCFram/ApplicationComponent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/OCFram/BackController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="71" column="1" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/OCFram/Entity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="65" column="1" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/OCFram/Field.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="106" column="1" selection-start-line="106" selection-start-column="1" selection-end-line="106" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/OCFram/Form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/OCFram/FormBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/OCFram/FormHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/OCFram/HTTPRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/OCFram/HTTPResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/OCFram/Hydrator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/OCFram/Manager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/OCFram/Managers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/OCFram/MaxLengthValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/OCFram/NotNullValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/OCFram/Page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/OCFram/StringField.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/OCFram/TextField.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/OCFram/Validator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/vendors/Entity/Comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/vendors/Entity/News.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="91" column="1" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/vendors/FormBuilder/CommentFormBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+          <folding>
+            <element signature="e#30#54#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/vendors/FormBuilder/NewsFormBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+          <folding>
+            <element signature="e#30#54#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/vendors/Model/CommentsManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="66" column="1" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
+          <folding>
+            <element signature="e#24#44#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/vendors/Model/CommentsManagerPDO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="74" column="1" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/vendors/Model/NewsManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="68" column="1" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
+          <folding>
+            <element signature="e#24#44#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/vendors/Model/NewsManagerPDO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="83" column="1" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/OCFram/Route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="89" column="1" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/OCFram/Router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/OCFram/Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/OCFram/PDOFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Backend/Config/app.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="36" lean-forward="true" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Backend/Config/routes.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Backend/Modules/Connexion/Views/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Backend/Modules/Connexion/ConnexionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="55" lean-forward="true" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/OCFram/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/OCFram/Application.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
